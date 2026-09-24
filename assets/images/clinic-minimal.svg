@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="clinicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2" />
+      <stop offset="100%" stop-color="#ECE3D7" />
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2D4C3" />
+      <stop offset="100%" stop-color="#D0BFAC" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#clinicGrad)" />
+  <!-- Architectural Wall Arch -->
+  <path d="M250,600 L250,150 Q400,80 550,150 L550,600 Z" fill="#FFFFFF" opacity="0.8" />
+  <!-- Soft Sunlight Shadow -->
+  <polygon points="180,0 380,0 520,600 240,600" fill="#FFFFFF" opacity="0.35" />
+  <!-- Minimalist Desk / Consule -->
+  <rect x="220" y="420" width="360" height="15" rx="3" fill="url(#woodGrad)" />
+  <!-- Ceramic Vase with Olive / Eucalyptus branch -->
+  <path d="M380,420 Q365,360 390,320 Q400,310 410,320 Q435,360 420,420 Z" fill="#F4EDE6" stroke="#D8C9BC" stroke-width="2" />
+  <!-- Organic Branch -->
+  <path d="M400,320 Q380,240 350,180" stroke="#8C9A86" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <path d="M400,310 Q420,220 440,160" stroke="#8C9A86" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <!-- Minimal Leaves -->
+  <ellipse cx="370" cy="220" rx="14" ry="7" transform="rotate(-30 370 220)" fill="#9DAA97" opacity="0.8" />
+  <ellipse cx="355" cy="180" rx="15" ry="8" transform="rotate(-40 355 180)" fill="#A9B6A3" opacity="0.8" />
+  <ellipse cx="415" cy="240" rx="14" ry="7" transform="rotate(30 415 240)" fill="#9DAA97" opacity="0.8" />
+  <ellipse cx="435" cy="170" rx="15" ry="8" transform="rotate(45 435 170)" fill="#A9B6A3" opacity="0.8" />
+  <!-- Boutique Clinic Badge -->
+  <rect x="280" y="510" width="240" height="42" rx="21" fill="#FFFFFF" stroke="#E6DCD1" stroke-width="1.5" />
+  <text x="400" y="536" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#6B645D" text-anchor="middle" letter-spacing="2">BUTİK &amp; HUZURLU KLİNİK AMBİYANSI</text>
+</svg>

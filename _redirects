@@ -1,0 +1,27 @@
+# Primary Domain Canonicalization (Force non-www HTTPS)
+https://www.drdenizkuzundar.com/*  https://drdenizkuzundar.com/:splat  301!
+http://www.drdenizkuzundar.com/*   https://drdenizkuzundar.com/:splat  301!
+http://drdenizkuzundar.com/*       https://drdenizkuzundar.com/:splat  301!
+
+# Legacy route redirects
+/cinsel-saglik.html                /kadin-cinsel-sagligi               301
+/cinsel-saglik                     /kadin-cinsel-sagligi               301
+/menopoz-longevity.html            /healthy-aging                      301
+/menopoz-longevity                 /healthy-aging                      301
+
+# Clean URL fallbacks
+/dr-deniz-kuzundar                 /dr-deniz-kuzundar.html             200
+/kadin-sagligi                     /kadin-sagligi.html                 200
+/healthy-aging                     /healthy-aging.html                 200
+/menopoz                           /menopoz.html                       200
+/yuz-cilt-rejuvenasyonu            /yuz-cilt-rejuvenasyonu.html        200
+/rejeneratif-estetik               /rejeneratif-estetik.html           200
+/vucut-rejuvenasyonu               /vucut-rejuvenasyonu.html           200
+/sac-sacli-deri                    /sac-sacli-deri.html                200
+/iv-destekleyici-uygulamalar       /iv-destekleyici-uygulamalar.html   200
+/jinekolojik-estetik               /jinekolojik-estetik.html           200
+/genital-saglik                    /genital-saglik.html                200
+/kadin-cinsel-sagligi              /kadin-cinsel-sagligi.html          200
+/vajinismus                        /vajinismus.html                    200
+/bilgi-merkezi                     /bilgi-merkezi.html                 200
+/iletisim                          /iletisim.html                      200

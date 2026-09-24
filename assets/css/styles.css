@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #FAF9F6;
+  --bg-surface: #F5EFE9;
+  --bg-elevated: #FFFFFF;
+  --text-main: #1B1E22;
+  --text-muted: #585C63;
+  --text-light: #888C95;
+  --accent-rose: #C69288;
+  --accent-rose-light: #F7EFEA;
+  --accent-gold: #C2A580;
+  --accent-gold-light: #FAF5EE;
+  --border-color: #EAE3DA;
+  --border-light: #F2ECE5;
+  --card-shadow: 0 12px 36px -8px rgba(32, 28, 26, 0.06);
+  --card-shadow-hover: 0 20px 48px -10px rgba(32, 28, 26, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Glassmorphism Navigation */
+.nav-blur {
+  background: rgba(250, 249, 246, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(234, 227, 218, 0.7);
+}
+
+/* Custom Soft Shadows */
+.shadow-soft {
+  box-shadow: var(--card-shadow);
+}
+
+.shadow-soft-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-soft-hover:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* Accent Borders */
+.border-warm {
+  border-color: var(--border-color);
+}
+
+/* Subtle gradient highlights */
+.bg-gradient-warm {
+  background: linear-gradient(135deg, #FAF9F6 0%, #F5EFE9 50%, #FAF5EE 100%);
+}
+
+.bg-gradient-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 100%);
+}
+
+/* Luxury button styling */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.875rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  background-color: #212429;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid #212429;
+}
+
+.btn-primary:hover {
+  background-color: #383C44;
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.875rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border-color);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #FFFFFF;
+  border-color: var(--accent-rose);
+  color: var(--accent-rose);
+  transform: translateY(-1px);
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.875rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: var(--accent-rose);
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-accent:hover {
+  background-color: #B58177;
+  transform: translateY(-1px);
+}
+
+/* FAQ Accordion Transitions */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px;
+  transition: max-height 0.45s ease-in-out;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Custom badge */
+.badge-subtle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8C655E;
+  background-color: #F8EFEA;
+  border: 1px solid #EEDCD3;
+  border-radius: 9999px;
+}
+
+/* Section Divider */
+.gold-divider {
+  width: 48px;
+  height: 2px;
+  background-color: var(--accent-gold);
+  margin: 1.25rem 0;
+}
+
+/* Active Nav Indicator */
+.nav-link {
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--accent-rose);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Mobile Drawer Overlay */
+.drawer-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-panel {
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.drawer-panel.open {
+  transform: translateX(0);
+}
+
+/* Custom interactive pill buttons for "Kendiniz İçin" */
+.concern-pill {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.concern-pill:hover,
+.concern-pill.active {
+  background-color: #FFFFFF;
+  border-color: var(--accent-rose);
+  color: #1A1C1E;
+  box-shadow: 0 4px 16px rgba(198, 146, 136, 0.16);
+  transform: translateY(-2px);
+}
+
+/* Desktop Dropdown Menus */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 270px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 0.6rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+  box-shadow: 0 18px 42px rgba(32, 28, 26, 0.1);
+  z-index: 60;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu,
+.nav-dropdown.open .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.55rem 0.85rem;
+  border-radius: 9px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #3A3D42;
+}
+
+.dropdown-item:hover {
+  background-color: #F8EFEA;
+  color: #1B1E22;
+  transform: translateX(2px);
+}
+
+.dropdown-item-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1B1E22;
+}
+
+.dropdown-item-desc {
+  font-size: 0.75rem;
+  color: #767A82;
+  margin-top: 1px;
+}
+
+/* Life Stages Tabs & Stepper */
+.stage-tab {
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-bottom: 2px solid transparent;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #6E727A;
+  background: transparent;
+  border-radius: 8px 8px 0 0;
+}
+
+.stage-tab.active {
+  color: #1B1E22;
+  border-bottom-color: var(--accent-rose);
+  font-weight: 600;
+  background-color: rgba(247, 239, 234, 0.65);
+}
+
+.stage-panel {
+  display: none;
+  animation: fadeInSoft 0.35s ease forwards;
+}
+
+.stage-panel.active {
+  display: block;
+}
+
+@keyframes fadeInSoft {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Accordion Submenu in Drawer */
+.mobile-sub-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 600;
+  padding: 0.75rem 0;
+  color: #1B1E22;
+}
+
+.mobile-sub-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  padding-left: 0.75rem;
+}
+
+.mobile-sub-group.open .mobile-sub-content {
+  max-height: 400px;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.mobile-sub-group.open .mobile-chevron {
+  transform: rotate(180deg);
+}
