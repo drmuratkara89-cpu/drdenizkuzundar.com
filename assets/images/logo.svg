@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Haute Medical Rose Gold & Antique Bronze Gradients -->
+    <linearGradient id="dkGold" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#E5C2B9" />
+      <stop offset="35%" stop-color="#C69288" />
+      <stop offset="70%" stop-color="#A26F65" />
+      <stop offset="100%" stop-color="#7C524B" />
+    </linearGradient>
+
+    <linearGradient id="dkGoldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C655E" />
+      <stop offset="60%" stop-color="#DFB8AE" />
+      <stop offset="100%" stop-color="#F7ECE8" />
+    </linearGradient>
+
+    <linearGradient id="medallionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7" />
+      <stop offset="50%" stop-color="#FAF5EE" />
+      <stop offset="100%" stop-color="#F2E8DC" />
+    </linearGradient>
+
+    <filter id="luxeShadow" x="-15%" y="-15%" width="130%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="3.5" flood-color="#7C524B" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Outer Fine Guilloche Circles (Elegance & Precision) -->
+  <circle cx="120" cy="120" r="110" fill="url(#medallionBg)" stroke="url(#dkGold)" stroke-width="1.8" />
+  <circle cx="120" cy="120" r="102" stroke="url(#dkGold)" stroke-width="0.75" stroke-dasharray="2.5 3.5" opacity="0.6" />
+  <circle cx="120" cy="120" r="96" stroke="url(#dkGoldLight)" stroke-width="0.5" opacity="0.4" />
+
+  <!-- Botanical Longevity Arcs (Subtle Olive / Cellular Crescent) -->
+  <path d="M 52,120 C 52,78 84,48 120,48" stroke="url(#dkGold)" stroke-width="1" stroke-linecap="round" opacity="0.5" />
+  <path d="M 188,120 C 188,162 156,192 120,192" stroke="url(#dkGold)" stroke-width="1" stroke-linecap="round" opacity="0.5" />
+
+  <!-- Zenith 8-Point Renaissance Compass Star (Excellence, Guidance & Vitality) -->
+  <g transform="translate(120, 36)" filter="url(#luxeShadow)">
+    <path d="M 0,-8 L 2,-2 L 8,0 L 2,2 L 0,8 L -2,2 L -8,0 L -2,-2 Z" fill="url(#dkGold)" />
+    <circle cx="0" cy="0" r="1" fill="#FFFFFF" />
+  </g>
+
+  <!-- Nadir Rejuvenation Pearl -->
+  <circle cx="120" cy="204" r="2.5" fill="url(#dkGold)" />
+
+  <!-- Central Intertwined Monogram: D and K -->
+  <g filter="url(#luxeShadow)">
+    
+    <!-- === LETTER 'D' === -->
+    <!-- D Left Serif Stem -->
+    <path d="M 72,70 L 88,70 M 80,70 L 80,170 M 72,170 L 88,170" 
+          stroke="url(#dkGold)" stroke-width="3.2" stroke-linecap="square" />
+    
+    <!-- D Curved Arch (Harmonious classical sweep) -->
+    <path d="M 80,72 C 118,72 144,88 144,120 C 144,152 118,168 80,168" 
+          fill="none" stroke="url(#dkGold)" stroke-width="3.2" stroke-linecap="round" />
+
+    <!-- === LETTER 'K' (Interwoven gracefully behind & through D) === -->
+    <!-- K Vertical Stem -->
+    <path d="M 106,70 L 122,70 M 114,70 L 114,170 M 106,170 L 122,170" 
+          stroke="url(#dkGoldLight)" stroke-width="2.6" stroke-linecap="square" opacity="0.95" />
+
+    <!-- K Upper Ascending Arm (Flowing upward like a botanical shoot) -->
+    <path d="M 114,116 L 152,72" 
+          stroke="url(#dkGold)" stroke-width="3" stroke-linecap="round" />
+    <!-- K Upper Terminal Serif / Petal Finial -->
+    <path d="M 146,70 L 156,70 M 156,70 Q 158,74 154,77" 
+          stroke="url(#dkGold)" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- K Lower Descending Leg (Graceful grounded diagonal) -->
+    <path d="M 118,112 L 156,168" 
+          stroke="url(#dkGold)" stroke-width="3.2" stroke-linecap="round" />
+    <!-- K Lower Terminal Foot Serif -->
+    <path d="M 148,170 L 164,170" 
+          stroke="url(#dkGold)" stroke-width="2.6" stroke-linecap="round" />
+
+  </g>
+
+  <!-- Fine Medical Aesthetic Inscription Ring (Micro-typography) -->
+  <path id="curveTop" d="M 50,120 A 70,70 0 0,1 190,120" fill="none" />
+  <path id="curveBottom" d="M 190,120 A 70,70 0 0,1 50,120" fill="none" />
+  
+  <text font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="7" font-weight="600" letter-spacing="3" fill="#8C655E" opacity="0.85">
+    <textPath href="#curveTop" startOffset="50%" text-anchor="middle">
+      DR. DENIZ KUZUNDAR
+    </textPath>
+  </text>
+
+  <text font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="6" font-weight="500" letter-spacing="2.5" fill="#A26F65" opacity="0.8">
+    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">
+      ESTHETIQUE &bull; REJUVENATION
+    </textPath>
+  </text>
+</svg>

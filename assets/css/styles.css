@@ -290,6 +290,11 @@ body {
   z-index: 60;
 }
 
+.nav-dropdown:nth-last-child(-n+2) .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
 .nav-dropdown:hover .dropdown-menu,
 .nav-dropdown:focus-within .dropdown-menu,
 .nav-dropdown.open .dropdown-menu {

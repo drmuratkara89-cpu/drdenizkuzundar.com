@@ -20,8 +20,19 @@ http://drdenizkuzundar.com/*       https://drdenizkuzundar.com/:splat  301!
 /sac-sacli-deri                    /sac-sacli-deri.html                200
 /iv-destekleyici-uygulamalar       /iv-destekleyici-uygulamalar.html   200
 /jinekolojik-estetik               /jinekolojik-estetik.html           200
+/labioplasti                       /labioplasti.html                   200
+/vajinal-daraltma                  /vajinal-daraltma.html              200
+/labia-majora-dolgusu              /labia-majora-dolgusu.html          200
+/genital-bolge-pigmentasyonu       /genital-bolge-pigmentasyonu.html   200
+/hymenoplasti                      /himenoplasti                       301!
+/hymenoplasti.html                 /himenoplasti                       301!
+/himenoplasti                      /himenoplasti.html                  200
 /genital-saglik                    /genital-saglik.html                200
 /kadin-cinsel-sagligi              /kadin-cinsel-sagligi.html          200
 /vajinismus                        /vajinismus.html                    200
 /bilgi-merkezi                     /bilgi-merkezi.html                 200
 /iletisim                          /iletisim.html                      200
+
+# Genital Estetik route alias
+/genital-estetik                    /jinekolojik-estetik.html           200
+/genital-estetik.html               /jinekolojik-estetik.html           200

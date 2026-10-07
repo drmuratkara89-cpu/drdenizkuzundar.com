@@ -1,5 +1,5 @@
-/**
- * Dr. Deniz Kuzundar - Kadın Sağlığı • Rejüvenasyon • Longevity • Jinekolojik Estetik
+﻿/**
+ * Dr. Deniz Kuzundar - Kadın Sağlığı • Rejüvenasyon • Longevity • Genital Estetik
  * Core UX, Navigation, Life Stages, Interactive Concern Guide & Contact
  */
 
@@ -149,12 +149,12 @@ const concernData = {
   },
   genital_degisiklik: {
     title: "Genital Bölgemde Değişiklik Hissediyorum",
-    badge: "Jinekolojik Estetik",
+    badge: "Genital Estetik",
     description: "Doğumlar, genetik yapı, hormonal dalgalanmalar veya yaş alma nedeniyle genital dokularda elastikiyet kaybı, labial asimetri veya form değişiklikleri ortaya çıkabilir. Bu durum hem fiziksel konforu hem de kadının bedeniyle barışıklığını etkiler.",
     approach: "Öncelikle anatomik ve fizyolojik durum titizlikle muayene edilir. Gereksiz işlemlerden kesinlikle kaçınılarak; estetik ve fonksiyonu dengeleyen dokuya saygılı çözümler sunulur.",
     topics: ["Estetik ve fonksiyonel bütünlük değerlendirmesi", "Vulvar anatomi ve konfor analizi", "Dokuya saygılı cerrahi ve non-invaziv yaklaşımlar"],
     linkUrl: "jinekolojik-estetik.html",
-    linkText: "Jinekolojik Estetik Yaklaşımını İnceleyin"
+    linkText: "Genital Estetik Yaklaşımını İnceleyin"
   },
   vajinal_kuruluk: {
     title: "Vajinal Kuruluk ve Hassasiyet Yaşıyorum",
@@ -331,7 +331,7 @@ function initContactForm() {
     }
 
     setTimeout(() => {
-      window.open(`https://wa.me/905392508489?text=${waText}`, '_blank');
+      window.open(`https://wa.me/903742704575?text=${waText}`, '_blank');
     }, 600);
   });
 }
