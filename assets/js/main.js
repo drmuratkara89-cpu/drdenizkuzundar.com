@@ -308,31 +308,9 @@ function initHeaderScroll() {
 function initContactForm() {
   const form = document.getElementById('inquiryForm');
   if (!form) return;
-
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = form.querySelector('[name="fullname"]')?.value.trim();
-    const phone = form.querySelector('[name="phone"]')?.value.trim();
-    const topic = form.querySelector('[name="subject"]')?.value || 'Genel Bilgi & Danışmanlık';
-    const note = form.querySelector('[name="message"]')?.value.trim();
-
-    if (!name || !phone) {
-      alert('Lütfen adınızı ve telefon numaranızı giriniz.');
-      return;
-    }
-
-    const waText = encodeURIComponent(
-      `Merhaba Dr. Deniz Kuzundar Kliniği,\n\nBen ${name}. Web siteniz üzerinden "${topic}" konusunda ön bilgi ve randevu süreci hakkında danışmak istedim.\nİletişim Numaram: ${phone}\n${note ? `Not: ${note}` : ''}`
-    );
-
-    const successMsg = document.getElementById('formSuccessMsg');
-    if (successMsg) {
-      successMsg.classList.remove('hidden');
-    }
-
-    setTimeout(() => {
-      window.open(`https://wa.me/903742704575?text=${waText}`, '_blank');
-    }, 600);
+    alert('Güvenli başvuru sistemi hazırlanıyor. Bu form şu anda gönderim yapmıyor.');
   });
 }
 
