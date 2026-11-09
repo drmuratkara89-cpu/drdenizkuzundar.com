@@ -441,3 +441,7 @@ body > main > section:first-child a:focus-visible{outline:3px solid #8c655e;outl
 /* Long editorial CTA labels must wrap on narrow displays. */
 @media(max-width:400px){a.btn-secondary.whitespace-nowrap{white-space:normal;max-width:100%;text-align:center;line-height:1.4}}
 @media(max-width:400px){body > main > section:first-child .absolute[class*="-inset-4"]{display:none}}
+
+/* Lighthouse accessibility: readable contrast on small editorial labels. */
+.badge-subtle{color:#73504b}
+span[class*="text-[#767A82]"],p[class*="text-[#767A82]"]{color:#555960}
