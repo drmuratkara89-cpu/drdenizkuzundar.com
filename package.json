@@ -1,0 +1,10 @@
+{
+  "name": "drdenizkuzundar-static-site",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.cjs -i assets/css/tailwind-input.css -o assets/css/tailwind-built.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}
