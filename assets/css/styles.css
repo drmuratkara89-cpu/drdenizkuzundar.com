@@ -447,3 +447,30 @@ body > main > section:first-child a:focus-visible{outline:3px solid #8c655e;outl
 span[class*="text-[#767A82]"],p[class*="text-[#767A82]"]{color:#555960}
 /* Accessible contrast for muted legal footer copy against dark background. */
 footer div[class*="text-[#767A82]"]{color:#B5BCC3}
+
+/* Deniz 2026 editorial finishing: warmer hero, restrained movement, mobile portrait prominence. */
+.premium-deniz-home>main>section:first-child{background:linear-gradient(122deg,#fbf9f6 0%,#f6f0e9 68%,#f9f6f2 100%)}
+.premium-deniz-home>main>section:first-child h1{letter-spacing:-.045em;font-weight:400}
+.premium-deniz-home>main>section:first-child .badge-subtle{background:#f6eae5;border-color:#e8d8d0}
+.premium-deniz-home>main>section:first-child .shadow-soft{box-shadow:0 20px 65px -32px rgba(77,52,45,.2)}
+.premium-deniz-home>main>section:first-child .lg\:col-span-5 img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ .premium-deniz-home>main>section:first-child .lg\:col-span-5:hover img{transform:scale(1.018)}
+}
+@media(max-width:767px){
+ .premium-deniz-home>main>section:first-child{padding-top:26px;padding-bottom:48px}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-7{gap:0}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-7>p{margin-top:16px;font-size:15px;line-height:1.65}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-7>div:has(>a.btn-primary){padding-top:9px;margin-top:10px;gap:10px}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-7>div:has(>a.btn-primary) a{font-size:11px;min-height:44px}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-7>div.grid.grid-cols-3{display:none}
+ .premium-deniz-home>main>section:first-child .grid.grid-cols-1{gap:26px}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-5 .rounded-2xl{padding:8px}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-5 .aspect-\[4\/5\]{aspect-ratio:5/5}
+ .premium-deniz-home>main>section:first-child .lg\:col-span-5 img{object-position:center 20%}
+ .premium-deniz-home>main>section:first-child h1{letter-spacing:-.04em}
+}
+@media(max-width:380px){
+ .premium-deniz-home>main>section:first-child .lg\:col-span-7>div:has(>a.btn-primary) a{width:100%;text-align:center;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){.premium-deniz-home>main>section:first-child img{transition:none}}
