@@ -398,3 +398,28 @@ body {
 .mobile-sub-group.open .mobile-chevron {
   transform: rotate(180deg);
 }
+
+/* CuriGate Premium Editorial pass - 2026-11-09; scoped to home opening */
+body > main > section:first-child.bg-gradient-warm{
+  background:linear-gradient(120deg,#fbf9f5 0%,#f8f4ee 52%,#eee5dc 100%);
+}
+body > main > section:first-child h1{
+  letter-spacing:-.035em;
+  text-wrap:balance;
+}
+body > main > section:first-child .shadow-soft{
+  box-shadow:0 22px 68px -28px rgba(71,49,43,.22);
+}
+body > main > section:first-child img[fetchpriority="high"]{filter:contrast(1.015)}
+body > main > section:first-child .badge-subtle{letter-spacing:.06em}
+body > main > section:first-child .btn-primary,
+body > main > section:first-child .btn-secondary{min-height:46px}
+body > main > section:first-child a:focus-visible{outline:3px solid #8c655e;outline-offset:4px}
+@media(max-width:640px){
+  body > main > section:first-child.bg-gradient-warm{background:#faf8f4}
+  body > main > section:first-child .grid{gap:2rem}
+  body > main > section:first-child h1{letter-spacing:-.025em}
+}
+@media(prefers-reduced-motion:reduce){
+  body > main > section:first-child *{scroll-behavior:auto}
+}
