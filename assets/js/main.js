@@ -254,7 +254,7 @@ function initConcernSelector() {
         if (approachEl) approachEl.textContent = data.approach;
 
         if (topicsEl) {
-          topicsEl.innerHTML = '';
+          topicsEl.replaceChildren();
           data.topics.forEach((topic) => {
             const li = document.createElement('li');
             li.className = 'flex items-center gap-2 text-sm text-[#585C63]';
@@ -262,8 +262,10 @@ function initConcernSelector() {
               <svg class="w-4 h-4 text-[#C69288] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span>${topic}</span>
             `;
+            const label = document.createElement('span');
+            label.textContent = topic;
+            li.appendChild(label);
             topicsEl.appendChild(li);
           });
         }
